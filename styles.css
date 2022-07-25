@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #eff4fd;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #4285f4;
+}
+
+.detel {
+  margin-left: 8%;
+  margin-top: 15%;
+  width: 45%;
+}
+
+.detel h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #4285f4;
+}
+
+.detel p {
+  color: #555;
+  line-height: 22px;
+}
+
+.detel a {
+  background: #212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.images {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.computer {
+  width: 60%;
+  height: 45%;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .computer {
+  left: 45%;
+}
+
+.social {
+  margin-left: 8%;
+  margin-top: 100px;
+}
+
+.social a {
+  font-size: 30px;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: #4285f4;
+}
+
+.contact {
+  width: 100%;
+  height: 600px;
+  background: #fff;
+}
+
+/* INICIO CSS FORMULARIOS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 100%;
+}
+
+.left-container {
+  background: #4285f4;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+
+.left-container img {
+  width: 70%;
+  height: 50%;
+}
+
+.right-container {
+  background-image: radial-gradient(
+    circle at 70.47% 85.46%,
+    #bcf0ff 0,
+    #38a0ff 50%,
+    #0058c4 100%
+  );
+  width: 500px;
+
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+}
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.right-container input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+}
+
+.right-container header {
+  padding: 40px;
+}
+.right-container label,
+.right-container input {
+  width: 176px;
+}
+
+.right-container footer {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 5px 40px;
+}
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+.right-container footer #back:hover {
+  background: #171a2b;
+  color: white;
+}
+.right-container footer #enviar {
+  background: #4285f4;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer #enviar:hover {
+  background: #171a2b;
+}
+
+.name label,
+.last_name label,
+.email label,
+.telefono label,
+.mensaje label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* FINAL CSS FORMULARIOS */
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

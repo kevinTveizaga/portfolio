@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/background.mp4">
+    </video>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#contact">CONTACTAME</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>Mi nombre es <span>Kevin</span></h1>
+            <p>Programador de paginas web con residencia en Bolivia. </p>
+            <a href="#">Descargar CV</a>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/computer.jpg" class="computer">
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/Desarrolladores-en-progreso-229055470606490/?ref=pages_you_manage"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/titichocaveizaga/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <section id="contact" class="contact">
+        
+        <div class="row">
+            <!-- INICIO FORMULARIO -->
+            <div class='signup-container'>
+                <div class='left-container'>
+                    <img src='images/computer.jpg'>
+                </div>
+                <div class='right-container'>
+                    <header>
+                        <h1>CONT&AacuteCTAME</h1>
+                        <div class='set'>
+                            <div class='name'>
+                                <label for='name'>Nombre</label>
+                                <input id='name' placeholder="Nombre" type='text'>
+                            </div>
+                            <div class='last_name'>
+                                <label for='last_name'>Apellido</label>
+                                <input id='last_name' placeholder="Apellido" type='text'>
+                            </div>
+                        </div>
+                        <div class='set'>
+                            <div class='email'>
+                                <label for='email'>Email</label>
+                                <input id='email' placeholder="Email" type='email'>
+                            </div>
+                            <div class='telefono'>
+                                <label for='telefono'>Tel&eacute;fono</label>
+                                <input id='telefono' placeholder='Teléfono' type='phone'>
+                            </div>
+                        </div>
+                        <div class='set'>
+                            <div class='mensaje'>
+                                <label for='mensaje'>Mensaje</label>
+                                <textarea name="mensaje" id='mensaje' placeholder='Mensaje' cols="60"
+                                    rows="10"></textarea>
+                            </div>
+                        </div>
+
+                    </header>
+                    <footer>
+                        <div class='set'>
+                            <button id='enviar'><i class="fa fa-envelope"></i> Enviar</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!-- FINAL FORMULARIO-->
+        </div>
+    </section>
+</body>
+
+</html>
